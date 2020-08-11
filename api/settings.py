@@ -44,10 +44,6 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'corsheaders',
     # Aplicações
-    'core',
-    'financeiro',
-    'info',
-    'estoque'
 ]
 
 MIDDLEWARE = [
@@ -152,8 +148,7 @@ LANGUAGE_CODE = 'pt-br'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]',
-                 '.fivesysweb.dyndns.org', '.cosechasweb.dyndns.org']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]',]
 CORS_ORIGIN_ALLOW_ALL = True
 
 TIME_ZONE = 'UTC'
