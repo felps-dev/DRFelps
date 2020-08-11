@@ -22,10 +22,6 @@ from core.views.utils import obtain_auth_token
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('core.urls')),
-    path('api/', include('financeiro.urls')),
-    path('api/', include('info.urls')),
-    path('api/', include('estoque.urls')),
     url(r'^api/api-auth/', include('rest_framework.urls')),
     url(r'^api/obtain-auth-token/$', obtain_auth_token)
 ]
