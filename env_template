@@ -1,3 +1,5 @@
+# Django
+DJANGO_SECRET=
 # Mysql
 MYSQL_DATABASE=
 MYSQL_USER=

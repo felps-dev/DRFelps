@@ -1,7 +1,7 @@
 """api URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/3.0/topics/http/urls/
+    https://docs.djangoproject.com/en/3.1/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -15,17 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.conf.urls import include, url
-from django.views.decorators.csrf import csrf_exempt
-# from rest_framework.authtoken.views import obtain_auth_token
-from core.views.utils import obtain_auth_token
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('core.urls')),
-    path('api/', include('financeiro.urls')),
-    path('api/', include('info.urls')),
-    path('api/', include('estoque.urls')),
-    url(r'^api/api-auth/', include('rest_framework.urls')),
-    url(r'^api/obtain-auth-token/$', obtain_auth_token)
 ]
