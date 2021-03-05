@@ -2,5 +2,9 @@
   "python.pythonPath": "env\\Scripts\\python.exe",
   "files.exclude": {
     "**/__pycache__": true
-  }
+  },
+  "python.linting.pylintArgs": [
+          "--disable=django-not-configured",
+          "--django-settings-module=api.settings",
+  ],
 }
