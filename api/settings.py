@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
+    'core'
 ]
 
 MIDDLEWARE = [
@@ -132,6 +133,8 @@ REST_FRAMEWORK = {
     'ORDERING_PARAM': 'sorting',
 }
 
+# AUTH USER MODEL
+AUTH_USER_MODEL = 'core.User'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
