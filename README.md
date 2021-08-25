@@ -2,7 +2,7 @@
 
 ## Dependências
 
-- Python 3.8.1
+- Python
 - DJango
 - DjangoRestFramework
 
