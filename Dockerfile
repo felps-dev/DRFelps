@@ -3,7 +3,7 @@
 # Based on Linux Alpine
 ############################################################
 
-FROM python:3.8.2-alpine
+FROM python:3.9.6-alpine
 
 ENV PYTHONUNBUFFERED 1
 
