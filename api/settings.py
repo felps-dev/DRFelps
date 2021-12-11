@@ -41,9 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'django_filters',
-    'drf_spectacular',
-    'core',
+    'core'
 ]
 
 MIDDLEWARE = [
@@ -127,12 +125,12 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ),
     'DEFAULT_FILTER_BACKENDS': (
+        'rest_framework_filters.backends.RestFrameworkFilterBackend',
         'rest_framework.filters.SearchFilter',
         'rest_framework.filters.OrderingFilter',
-        'django_filters.rest_framework.DjangoFilterBackend',
+        # 'url_filter.integrations.drf.DjangoFilterBackend' <- Best Django filter for URLS
     ),
     'ORDERING_PARAM': 'sorting',
-    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
 
 # AUTH USER MODEL
